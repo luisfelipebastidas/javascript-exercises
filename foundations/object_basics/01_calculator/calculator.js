@@ -7,20 +7,20 @@ const subtract = function (a, b) {
 };
 
 const sum = function (array) {
-  return array.reduce((total, current) => total + number, 0);
+  return array.reduce((total, current) => total + current, 0);
 };
 
 const multiply = function (array) {
-  return array.reduce((total, current) => total * number, 1);
+  return array.reduce((total, current) => total * current, 1);
 };
 
 const power = function (base, exponent) {
   return base ** exponent;
 };
 
-const factorial = function (number) {
+const factorial = function (n) {
   let result = 1;
-  for (let i = 1; i <= number; i++) {
+  for (let i = n; i > 0; i--) {
     result *= i;
   }
   return result;
