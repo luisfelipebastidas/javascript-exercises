@@ -1,7 +1,7 @@
 const fibonacci = function (position) {
   const count = Number(position);
 
-  if (count < 0) return "OOPS";
+  if (!Number.isInteger(count) || count < 0) return "OOPS";
   if (count === 0) return 0;
 
   let previous = 0;
